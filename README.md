@@ -1,3 +1,29 @@
-In the age of information overload, efficiently extracting and utilizing relevant news content for educational purposes poses a significant challenge. This project presents an AI-driven system that automatically generates multiple-choice questions (MCQs) from real-time news articles to support competitive exam preparation. Leveraging the NewsAPI, the system fetches current articles related to key domains such as national affairs, economy, science, and general awareness. It then applies a series of Natural Language Processing (NLP) and Machine Learning techniques to convert this unstructured data into structured, quiz-ready content.
-The workflow begins with news summarization using the t5-base transformer model to distill lengthy articles into concise, informative summaries. Keyword extraction is performed using KeyBERT with a sentence transformer backend, identifying key concepts suitable for question generation. The t5_squad_v1 model is then used to frame context-relevant questions from these keywords. To ensure a high-quality quiz experience, distractor options are generated using a combination of Sense2Vec and WordNet, and further refined using Levenshtein distance to avoid semantic overlap.
-This system bridges the gap between real-time information and personalized learning. It offers a scalable, automated approach to help students revise current affairs through dynamically generated quizzes, enhancing engagement, retention, and exam readiness.
+🧠 NewsPrep: UPSC Quiz Generator with Live News & Fine-Tuned Transformers
+NewsPrep is an intelligent UPSC-prep assistant that fetches live news articles, summarizes them, and generates context-aware multiple-choice questions (MCQs). Built with fine-tuned transformer models (BART for summarization and T5 for question generation), it helps aspirants reinforce current affairs knowledge with quizzes curated from real-time news.
+
+🚀 Features
+🔍 Fetches latest news using NewsAPI
+
+📝 Summarizes articles using fine-tuned BART
+
+❓ Generates MCQs using fine-tuned T5 model
+
+🧠 Creates meaningful distractors using Sense2Vec, WordNet, and semantic filtering
+
+📊 Visualizes quiz performance and word cloud
+
+⚙️ Fully interactive Streamlit UI
+
+🔧 Tech Stack
+Frontend/UI: Streamlit
+
+Backend: Python (Transformers, NLTK, KeyBERT, Sense2Vec)
+
+Models:
+
+bart-finetuned-newss (local) – Summarization
+
+t5_qg_finetuned (local) – Question Generation
+
+News Source: NewsAPI
+
