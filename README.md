@@ -1,4 +1,4 @@
-🧠 NewsPrep: UPSC Quiz Generator with Live News & Fine-Tuned Transformers
+NewsPrep: UPSC Quiz Generator with Live News & Fine-Tuned Transformers
 NewsPrep is an intelligent UPSC-prep assistant that fetches live news articles, summarizes them, and generates context-aware multiple-choice questions (MCQs). Built with fine-tuned transformer models (BART for summarization and T5 for question generation), it helps aspirants reinforce current affairs knowledge with quizzes curated from real-time news.
 
 🚀 Features
